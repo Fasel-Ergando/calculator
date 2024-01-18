@@ -1,2 +1,2 @@
 # calculator
-Calculator app that calculates values entered and and is completely responsive.
+Calculator app made with javaScript that calculates values entered and and is completely responsive.
