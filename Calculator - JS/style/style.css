@@ -1,0 +1,117 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+/* GENERAL STYLES */
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #003366, #663399);
+}
+
+.container {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.numPad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.displayUserInput {
+  position: relative;
+}
+
+.userInput {
+  width: 300px;
+  height: 120px;
+  font-size: 35px;
+  text-align: right;
+  background-color: transparent;
+  padding: 20px;
+  color: white;
+  border: none;
+  padding-right: 50px;
+}
+
+.numPad button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: hsl(210, 11%, 15%);
+  color: white;
+}
+
+.numPad button:hover {
+  background-color: hsl(210, 11%, 20%);
+}
+
+.numPad .equal {
+  width: 135px;
+}
+
+.delete {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: hsl(210, 11%, 15%);
+}
+
+.delete:active {
+  background-color: hsl(210, 11%, 20%);
+}
+
+.delete svg {
+  fill: rgb(216, 82, 82);
+}
+
+.numPad .operator {
+  color: hsl(120, 100%, 60%);
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 350px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .userInput {
+    font-size: 20px;
+    width: 270px;
+  }
+
+  .numPad button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .numPad .equal {
+    width: 115px;
+  }
+}
